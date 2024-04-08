@@ -8,24 +8,24 @@ The application starts with two apis.  One for defining an owner and the second 
 
 ## App structure
 
-|-api/
-|	|-app
-|	|	|-__init__.py
-|	|	|-extensions.py
-|	|	|-models/
-|	|	|	|-owner.py
-|	|	|	|-tasks.py
-|	|	|-owner/
-|	|	|	|-__init__.py
-|	|	|-tasks/
-|	|	|	|-__init__.py
-|	|	|-tests/
-|	|	|	|-__init__.py
-|	|	|	|-test_models.py
-|	|	|	|-test_owner_api.py
-|	|	|	|-test_tasks_api.py
-|-config.py
-|-requirements.py
+-|-api/
+-|	|-app
+-|	|	|-__init__.py
+-|	|	|-extensions.py
+-|	|	|-models/
+-|	|	|	|-owner.py
+-|	|	|	|-tasks.py
+-|	|	|-owner/
+-|	|	|	|-__init__.py
+-|	|	|-tasks/
+-|	|	|	|-__init__.py
+-|	|	|-tests/
+-|	|	|	|-__init__.py
+-|	|	|	|-test_models.py
+-|	|	|	|-test_owner_api.py
+-|	|	|	|-test_tasks_api.py
+-|-config.py
+-|-requirements.py
 
 ## How to use
 

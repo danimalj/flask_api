@@ -1,6 +1,6 @@
 from app import db
-from extensions import reqparse, Resource
-from models import Owner
+from app.extensions import reqparse, Resource
+from app.models.owner import Owner
 
 parser = reqparse.RequestParser()
 parser.add_argument('first_nm', type=str, required=True, help='First Name is required')
@@ -9,7 +9,7 @@ parser.add_argument('email', type=str, required=True, help='Email is required')
 
 class OwnerResource(Resource):
     def get(self, owner_id):
-        owner = Owner.query.get(owner_id)
+        owner = db.session.get(Owner, owner_id)
         if owner:
             return {'first_nm': owner.first_nm, 'last_nm': owner.last_nm, 'email': owner.email}
         return {'message': 'Owner not found'}, 404
@@ -22,7 +22,7 @@ class OwnerResource(Resource):
         return {'message': 'Owner created successfully'}, 201
     
     def delete(self, owner_id):
-        owner = Owner.query.get(owner_id)
+        owner = db.session.get(Owner, owner_id)
         if owner:
             db.session.delete(owner)
             db.session.commit()

@@ -7,26 +7,26 @@ This project is intended to demonstrate a simple flask rest api applicaiton. It 
 The application starts with two apis.  One for defining an owner and the second identifying their associated tasks. This project assumes that you have at the minimum an installation of python available to run the program.
 
 ## App structure
-
--|-api/
--|	|-app
--|	|	|-__init__.py
--|	|	|-extensions.py
--|	|	|-models/
--|	|	|	|-owner.py
--|	|	|	|-tasks.py
--|	|	|-owner/
--|	|	|	|-__init__.py
--|	|	|-tasks/
--|	|	|	|-__init__.py
--|	|	|-tests/
--|	|	|	|-__init__.py
--|	|	|	|-test_models.py
--|	|	|	|-test_owner_api.py
--|	|	|	|-test_tasks_api.py
--|-config.py
--|-requirements.py
-
+```
+|-api/
+|	|-app
+|	|	|-__init__.py
+|	|	|-extensions.py
+|	|	|-models/
+|	|	|	|-owner.py
+|	|	|	|-tasks.py
+|	|	|-owner/
+|	|	|	|-__init__.py
+|	|	|-tasks/
+|	|	|	|-__init__.py
+|	|	|-tests/
+|	|	|	|-__init__.py
+|	|	|	|-test_models.py
+|	|	|	|-test_owner_api.py
+|	|	|	|-test_tasks_api.py
+|-config.py
+|-requirements.py
+```
 ## How to use
 
 Since this application is intended to be simple, it is anticipated it will be run locally on your machine.  All instructions are geared towards a local installation and execution.
